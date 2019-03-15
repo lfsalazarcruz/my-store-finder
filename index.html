@@ -19,5 +19,17 @@
     <div id="map" class="map pad2">Map</div>
 
     <script src="" async defer></script>
+    <script>
+      L.mapbox.accessToken =
+        "pk.eyJ1IjoibGZzYWxhemFyY3J1eiIsImEiOiJjanQ4NTZibjAwNTZ1NDl1aWk0Zjg4dncyIn0.bN8E3W_BFnjyQKzOCxtkDg";
+      var map = L.mapbox
+        .map("map")
+        .setView([38.909671288923, -77.034084142948], 13)
+        .addLayer(
+          L.mapbox.styleLayer(
+            "mapbox://styles/lfsalazarcruz/cjt9jxquv0bub1ftai4csqtzk"
+          )
+        );
+    </script>
   </body>
 </html>
